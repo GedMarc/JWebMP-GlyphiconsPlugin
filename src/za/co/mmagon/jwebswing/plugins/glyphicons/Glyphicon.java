@@ -26,6 +26,7 @@ package za.co.mmagon.jwebswing.plugins.glyphicons;
 import za.co.mmagon.jwebswing.base.html.Span;
 import za.co.mmagon.jwebswing.base.html.attributes.NoAttributes;
 import za.co.mmagon.jwebswing.base.html.interfaces.children.NoChildren;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
  * GLYPHICONS is a library of precisely prepared monochromatic icons and symbols, created with an emphasis to simplicity and easy orientation.
@@ -34,6 +35,7 @@ import za.co.mmagon.jwebswing.base.html.interfaces.children.NoChildren;
  * @since 23 Feb 2017
  *
  */
+@ComponentInformation(name = "Glyphicons", description = "GLYPHICONS is a library of precisely prepared monochromatic icons and symbols, created with an emphasis to simplicity and easy orientation.", url = "http://glyphicons.com/")
 public class Glyphicon extends Span<NoChildren, NoAttributes, Span>
 {
 
@@ -62,11 +64,21 @@ public class Glyphicon extends Span<NoChildren, NoAttributes, Span>
         super.preConfigure();
     }
 
+    /**
+     * Returns this icon
+     *
+     * @return
+     */
     public Glyphicons getIcon()
     {
         return icon;
     }
 
+    /**
+     * Sets this icon
+     *
+     * @param icon
+     */
     public void setIcon(Glyphicons icon)
     {
         this.icon = icon;

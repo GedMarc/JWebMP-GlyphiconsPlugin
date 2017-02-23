@@ -64,7 +64,7 @@ public class GlyphiconsPageConfigurator extends PageConfigurator
         {
             if (page.getBody().readChildrenPropertyFirstResult(GlyphiconsEnabled, true))
             {
-                page.getBody().addCssReference(new CSSReference("Glyphicons", 1.92, "bower_components/glyphicons-only-bootstrap/css/bootstrap.min.css"));
+                page.getBody().addCssReference(new CSSReference("Glyphicons", 1.92, "bower_components/glyphicons-only-bootstrap/css/bootstrap.min.css", ""));
             }
         }
         return page;
