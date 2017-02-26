@@ -292,7 +292,7 @@ public enum Glyphicons
     @Override
     public String toString()
     {
-        return "glyphicon glyphicon_" + name().toLowerCase().replaceAll("$", " ").replaceAll("_", "-");
+        return "glyphicon glyphicon-" + name().toLowerCase().replaceAll("$", " ").replaceAll("_", "-");
     }
 
 }
