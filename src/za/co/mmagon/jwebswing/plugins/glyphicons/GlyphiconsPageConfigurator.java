@@ -1,25 +1,18 @@
-/*
- * The MIT License
+/* 
+ * Copyright (C) 2017 Marc Magon
  *
- * Copyright 2017 GedMarc.
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
  *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
  *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package za.co.mmagon.jwebswing.plugins.glyphicons;
 
@@ -38,13 +31,17 @@ import za.co.mmagon.logger.LogFactory;
  *
  */
 @PluginInformation(pluginName = "Glyphicons", pluginUniqueName = "glyphicons", pluginDescription = "GLYPHICONS is a library of precisely prepared monochromatic icons and symbols, created with an emphasis to simplicity and easy orientation.",
-        pluginVersion = "1.9.2",
-        pluginDependancyUniqueIDs = "", pluginCategories = "fonts, icons",
-        pluginSubtitle = "Icons are not designed only for toolbars and navigation in Apple's OS X, iOS, and watchOS. They work perfectly almost everywhere. ",
-        pluginGitUrl = "https://github.com/GedMarc/JWebSwing-GlyphiconsPlugin",
-        pluginSourceUrl = "",
-        pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-GlyphiconsPlugin/wiki",
-        pluginOriginalHomepage = "http://glyphicons.com/")
+                   pluginVersion = "1.9.2",
+                   pluginDependancyUniqueIDs = "", pluginCategories = "fonts, icons",
+                   pluginSubtitle = "Icons are not designed only for toolbars and navigation in Apple's OS X, iOS, and watchOS. They work perfectly almost everywhere. ",
+                   pluginGitUrl = "https://github.com/GedMarc/JWebSwing-GlyphiconsPlugin",
+                   pluginSourceUrl = "",
+                   pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-GlyphiconsPlugin/wiki",
+                   pluginOriginalHomepage = "http://glyphicons.com/",
+                   pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/GlyphiconsPlugin.jar/download",
+                   pluginIconUrl = "bower_components/glyphicons-only/square_logo_400x400.png",
+                   pluginIconImageUrl = "bower_components/glyphicons-only/square_logo_400x400.png",
+                   pluginLastUpdatedDate = "2017/03/04")
 public class GlyphiconsPageConfigurator extends PageConfigurator
 {
 
