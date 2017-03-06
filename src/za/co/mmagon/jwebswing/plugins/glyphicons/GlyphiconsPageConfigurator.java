@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -39,8 +39,8 @@ import za.co.mmagon.logger.LogFactory;
                    pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-GlyphiconsPlugin/wiki",
                    pluginOriginalHomepage = "http://glyphicons.com/",
                    pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/GlyphiconsPlugin.jar/download",
-                   pluginIconUrl = "bower_components/glyphicons-only/square_logo_400x400.png",
-                   pluginIconImageUrl = "bower_components/glyphicons-only/square_logo_400x400.png",
+                   pluginIconUrl = "bower_components/glyphicons-only-bootstrap/square_logo_400x400.png",
+                   pluginIconImageUrl = "bower_components/glyphicons-only-bootstrap/square_logo_400x400.png",
                    pluginLastUpdatedDate = "2017/03/04")
 public class GlyphiconsPageConfigurator extends PageConfigurator
 {
