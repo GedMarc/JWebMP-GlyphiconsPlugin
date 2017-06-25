@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -28,8 +28,10 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  * @since 23 Feb 2017
  *
  */
-@ComponentInformation(name = "Glyphicons", description = "GLYPHICONS is a library of precisely prepared monochromatic icons and symbols, created with an emphasis to simplicity and easy orientation.", url = "http://glyphicons.com/")
-public class Glyphicon extends Span<NoChildren, NoAttributes, Span>
+@ComponentInformation(name = "Glyphicons",
+                      description = "GLYPHICONS is a library of precisely prepared monochromatic icons and symbols, created with an emphasis to simplicity and easy orientation.",
+                      url = "http://glyphicons.com/")
+public class Glyphicon extends Span<NoChildren, NoAttributes, Glyphicon>
 {
 
     private static final long serialVersionUID = 1L;
