@@ -26,57 +26,56 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  *
  * @author GedMarc
  * @since 23 Feb 2017
- *
  */
 @ComponentInformation(name = "Glyphicons",
-                      description = "GLYPHICONS is a library of precisely prepared monochromatic icons and symbols, created with an emphasis to simplicity and easy orientation.",
-                      url = "http://glyphicons.com/")
+		description = "GLYPHICONS is a library of precisely prepared monochromatic icons and symbols, created with an emphasis to simplicity and easy orientation.",
+		url = "http://glyphicons.com/")
 public class Glyphicon extends Span<NoChildren, NoAttributes, Glyphicon>
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    private Glyphicons icon;
+	private Glyphicons icon;
 
-    /**
-     * GLYPHICONS is a library of precisely prepared monochromatic icons and symbols, created with an emphasis to simplicity and easy orientation.
-     *
-     * @param icon
-     */
-    public Glyphicon(Glyphicons icon)
-    {
-        this.icon = icon;
-        GlyphiconsPageConfigurator.setGlyphiconsRequired(this, true);
-    }
+	/**
+	 * GLYPHICONS is a library of precisely prepared monochromatic icons and symbols, created with an emphasis to simplicity and easy orientation.
+	 *
+	 * @param icon
+	 */
+	public Glyphicon(Glyphicons icon)
+	{
+		this.icon = icon;
+		GlyphiconsPageConfigurator.setGlyphiconsRequired(this, true);
+	}
 
-    @Override
-    public void preConfigure()
-    {
-        if (!isConfigured())
-        {
-            addClass(icon.toString());
-        }
-        super.preConfigure();
-    }
+	@Override
+	public void preConfigure()
+	{
+		if (!isConfigured())
+		{
+			addClass(icon.toString());
+		}
+		super.preConfigure();
+	}
 
-    /**
-     * Returns this icon
-     *
-     * @return
-     */
-    public Glyphicons getIcon()
-    {
-        return icon;
-    }
+	/**
+	 * Returns this icon
+	 *
+	 * @return
+	 */
+	public Glyphicons getIcon()
+	{
+		return icon;
+	}
 
-    /**
-     * Sets this icon
-     *
-     * @param icon
-     */
-    public void setIcon(Glyphicons icon)
-    {
-        this.icon = icon;
-    }
+	/**
+	 * Sets this icon
+	 *
+	 * @param icon
+	 */
+	public void setIcon(Glyphicons icon)
+	{
+		this.icon = icon;
+	}
 
 }
