@@ -43,16 +43,16 @@ import java.util.logging.Logger;
 		pluginLastUpdatedDate = "2017/03/04")
 public class GlyphiconsPageConfigurator extends PageConfigurator
 {
-
+	
 	public static final String GlyphiconsEnabled = "glyphicons-enabled";
 	private static final long serialVersionUID = 1L;
 	private static final Logger log = LogFactory.getInstance().getLogger("Glyphicons");
-
+	
 	public GlyphiconsPageConfigurator()
 	{
-
+	
 	}
-
+	
 	/**
 	 * Sets the component as font awesome required to build
 	 *
@@ -63,16 +63,13 @@ public class GlyphiconsPageConfigurator extends PageConfigurator
 	{
 		component.getProperties().put(GlyphiconsEnabled, required);
 	}
-
+	
 	@Override
 	public Page configure(Page page)
 	{
 		if (!page.isConfigured())
 		{
-			if (page.getBody().readChildrenPropertyFirstResult(GlyphiconsEnabled, true))
-			{
-				page.getBody().addCssReference(new CSSReference("Glyphicons", 1.92, "bower_components/glyphicons-only-bootstrap/css/bootstrap.min.css", ""));
-			}
+			page.getBody().addCssReference(new CSSReference("Glyphicons", 1.92, "bower_components/glyphicons-only-bootstrap/css/bootstrap.min.css", ""));
 		}
 		return page;
 	}
