@@ -18,6 +18,8 @@ package za.co.mmagon.jwebswing.plugins.glyphicons;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 
+import static za.co.mmagon.jwebswing.utilities.StaticStrings.STRING_SPACE;
+
 /**
  * @author GedMarc
  * @since 20 Apr 2016
@@ -283,7 +285,7 @@ public enum Glyphicons
 	menu_down,
 	menu_up;
 
-	private Glyphicons()
+	Glyphicons()
 	{
 	}
 
@@ -291,7 +293,7 @@ public enum Glyphicons
 	@Override
 	public String toString()
 	{
-		return "glyphicon glyphicon-" + name().toLowerCase().replaceAll("$", " ").replaceAll("_", "-");
+		return "glyphicon glyphicon-" + name().toLowerCase().replaceAll("$", STRING_SPACE).replaceAll("_", "-");
 	}
 
 }
