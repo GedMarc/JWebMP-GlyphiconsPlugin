@@ -78,4 +78,32 @@ public class Glyphicon extends Span<NoChildren, NoAttributes, Glyphicon>
 		this.icon = icon;
 	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (o == null || getClass() != o.getClass())
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		Glyphicon glyphicon = (Glyphicon) o;
+
+		return getIcon() == glyphicon.getIcon();
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getIcon().hashCode();
+		return result;
+	}
 }

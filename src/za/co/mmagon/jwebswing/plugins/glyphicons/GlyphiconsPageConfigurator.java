@@ -21,9 +21,6 @@ import za.co.mmagon.jwebswing.Page;
 import za.co.mmagon.jwebswing.PageConfigurator;
 import za.co.mmagon.jwebswing.base.references.CSSReference;
 import za.co.mmagon.jwebswing.plugins.PluginInformation;
-import za.co.mmagon.logger.LogFactory;
-
-import java.util.logging.Logger;
 
 /**
  * @author GedMarc
@@ -46,11 +43,10 @@ public class GlyphiconsPageConfigurator extends PageConfigurator
 	
 	public static final String GlyphiconsEnabled = "glyphicons-enabled";
 	private static final long serialVersionUID = 1L;
-	private static final Logger log = LogFactory.getInstance().getLogger("Glyphicons");
 	
 	public GlyphiconsPageConfigurator()
 	{
-	
+		//Nothing Needed
 	}
 	
 	/**
