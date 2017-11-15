@@ -55,6 +55,7 @@ public class GlyphiconsPageConfigurator extends PageConfigurator
 	 * @param component
 	 * @param required
 	 */
+	@SuppressWarnings("unchecked")
 	public static void setGlyphiconsRequired(Component component, boolean required)
 	{
 		component.getProperties().put(GlyphiconsEnabled, required);
