@@ -177,11 +177,11 @@
                 <version>${maven.jar.version}</version>
             </plugin>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>                </configuration>            </plugin>            <plugin>                <groupId>org.sonarsource.scanner.maven</groupId>                <artifactId>sonar-maven-plugin</artifactId>                <version>3.3.0.603</version>            </plugin>        </plugins>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.3.0.603</version>
+            </plugin>
+        </plugins>
 
         <resources>
             <resource>
@@ -281,4 +281,21 @@
     <ciManagement>
         <system>TeamCity</system>
         <url>http://jwebswing.com/teamcity</url>
-    </ciManagement>    <reporting>        <plugins>            <plugin>                <groupId>org.jacoco</groupId>                <artifactId>jacoco-maven-plugin</artifactId>     <version>0.7.9</version>           <reportSets>                    <reportSet>                        <reports>                            <!-- select non-aggregate reports -->                            <report>report</report>                        </reports>                    </reportSet>                </reportSets>            </plugin>        </plugins>    </reporting></project>
+    </ciManagement>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.7.9</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>                            <!-- select non-aggregate reports -->
+                            <report>report</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+        </plugins>
+    </reporting>
+</project>
