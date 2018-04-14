@@ -14,21 +14,24 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.plugins.glyphicons;
+package com.jwebmp.plugins.glyphicons;
 
-import za.co.mmagon.jwebswing.Component;
-import za.co.mmagon.jwebswing.Page;
-import za.co.mmagon.jwebswing.PageConfigurator;
-import za.co.mmagon.jwebswing.base.references.CSSReference;
-import za.co.mmagon.jwebswing.plugins.PluginInformation;
+import com.jwebmp.Component;
+import com.jwebmp.Page;
+import com.jwebmp.PageConfigurator;
+import com.jwebmp.base.references.CSSReference;
+import com.jwebmp.plugins.PluginInformation;
 
 /**
  * @author GedMarc
  * @since 15 Feb 2017
  */
-@PluginInformation(pluginName = "Glyphicons", pluginUniqueName = "glyphicons", pluginDescription = "GLYPHICONS is a library of precisely prepared monochromatic icons and symbols, created with an emphasis to simplicity and easy orientation.",
+@PluginInformation(pluginName = "Glyphicons",
+		pluginUniqueName = "glyphicons",
+		pluginDescription = "GLYPHICONS is a library of precisely prepared monochromatic icons and symbols, created with an emphasis to simplicity and easy orientation.",
 		pluginVersion = "1.9.2",
-		pluginDependancyUniqueIDs = "", pluginCategories = "fonts, icons",
+		pluginDependancyUniqueIDs = "",
+		pluginCategories = "fonts, icons",
 		pluginSubtitle = "Icons are not designed only for toolbars and navigation in Apple's OS X, iOS, and watchOS. They work perfectly almost everywhere. ",
 		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-GlyphiconsPlugin",
 		pluginSourceUrl = "",
@@ -38,17 +41,18 @@ import za.co.mmagon.jwebswing.plugins.PluginInformation;
 		pluginIconUrl = "bower_components/glyphicons-only-bootstrap/square_logo_400x400.png",
 		pluginIconImageUrl = "bower_components/glyphicons-only-bootstrap/square_logo_400x400.png",
 		pluginLastUpdatedDate = "2017/03/04")
-public class GlyphiconsPageConfigurator extends PageConfigurator
+public class GlyphiconsPageConfigurator
+		extends PageConfigurator
 {
-	
+
 	public static final String GlyphiconsEnabled = "glyphicons-enabled";
 	private static final long serialVersionUID = 1L;
-	
+
 	public GlyphiconsPageConfigurator()
 	{
 		//Nothing Needed
 	}
-	
+
 	/**
 	 * Sets the component as font awesome required to build
 	 *
@@ -58,15 +62,17 @@ public class GlyphiconsPageConfigurator extends PageConfigurator
 	@SuppressWarnings("unchecked")
 	public static void setGlyphiconsRequired(Component component, boolean required)
 	{
-		component.getProperties().put(GlyphiconsEnabled, required);
+		component.getProperties()
+		         .put(GlyphiconsEnabled, required);
 	}
-	
+
 	@Override
 	public Page configure(Page page)
 	{
 		if (!page.isConfigured())
 		{
-			page.getBody().addCssReference(new CSSReference("Glyphicons", 1.92, "bower_components/glyphicons-only-bootstrap/css/bootstrap.min.css", ""));
+			page.getBody()
+			    .addCssReference(new CSSReference("Glyphicons", 1.92, "bower_components/glyphicons-only-bootstrap/css/bootstrap.min.css", ""));
 		}
 		return page;
 	}

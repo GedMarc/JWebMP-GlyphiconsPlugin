@@ -14,12 +14,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.plugins.glyphicons;
+package com.jwebmp.plugins.glyphicons;
 
-import za.co.mmagon.jwebswing.base.html.Span;
-import za.co.mmagon.jwebswing.base.html.attributes.NoAttributes;
-import za.co.mmagon.jwebswing.base.html.interfaces.children.NoChildren;
-import za.co.mmagon.jwebswing.plugins.ComponentInformation;
+import com.jwebmp.base.html.Span;
+import com.jwebmp.base.html.attributes.NoAttributes;
+import com.jwebmp.base.html.interfaces.children.NoChildren;
+import com.jwebmp.plugins.ComponentInformation;
 
 /**
  * GLYPHICONS is a library of precisely prepared monochromatic icons and symbols, created with an emphasis to simplicity and easy orientation.
@@ -30,7 +30,8 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 @ComponentInformation(name = "Glyphicons",
 		description = "GLYPHICONS is a library of precisely prepared monochromatic icons and symbols, created with an emphasis to simplicity and easy orientation.",
 		url = "http://glyphicons.com/")
-public class Glyphicon extends Span<NoChildren, NoAttributes, Glyphicon>
+public class Glyphicon
+		extends Span<NoChildren, NoAttributes, Glyphicon>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -58,24 +59,12 @@ public class Glyphicon extends Span<NoChildren, NoAttributes, Glyphicon>
 		super.preConfigure();
 	}
 
-	/**
-	 * Returns this icon
-	 *
-	 * @return
-	 */
-	public Glyphicons getIcon()
+	@Override
+	public int hashCode()
 	{
-		return icon;
-	}
-
-	/**
-	 * Sets this icon
-	 *
-	 * @param icon
-	 */
-	public void setIcon(Glyphicons icon)
-	{
-		this.icon = icon;
+		int result = super.hashCode();
+		result = 31 * result + getIcon().hashCode();
+		return result;
 	}
 
 	@Override
@@ -99,11 +88,23 @@ public class Glyphicon extends Span<NoChildren, NoAttributes, Glyphicon>
 		return getIcon() == glyphicon.getIcon();
 	}
 
-	@Override
-	public int hashCode()
+	/**
+	 * Returns this icon
+	 *
+	 * @return
+	 */
+	public Glyphicons getIcon()
 	{
-		int result = super.hashCode();
-		result = 31 * result + getIcon().hashCode();
-		return result;
+		return icon;
+	}
+
+	/**
+	 * Sets this icon
+	 *
+	 * @param icon
+	 */
+	public void setIcon(Glyphicons icon)
+	{
+		this.icon = icon;
 	}
 }
