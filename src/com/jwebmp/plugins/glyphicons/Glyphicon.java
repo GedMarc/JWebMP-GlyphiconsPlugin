@@ -18,7 +18,7 @@ package com.jwebmp.plugins.glyphicons;
 
 import com.jwebmp.base.html.Span;
 import com.jwebmp.base.html.attributes.NoAttributes;
-import com.jwebmp.base.html.interfaces.children.NoChildren;
+import com.jwebmp.base.html.interfaces.GlobalChildren;
 import com.jwebmp.plugins.ComponentInformation;
 
 /**
@@ -31,7 +31,7 @@ import com.jwebmp.plugins.ComponentInformation;
 		description = "GLYPHICONS is a library of precisely prepared monochromatic icons and symbols, created with an emphasis to simplicity and easy orientation.",
 		url = "http://glyphicons.com/")
 public class Glyphicon
-		extends Span<NoChildren, NoAttributes, Glyphicon>
+		extends Span<GlobalChildren, NoAttributes, Glyphicon>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -60,14 +60,6 @@ public class Glyphicon
 	}
 
 	@Override
-	public int hashCode()
-	{
-		int result = super.hashCode();
-		result = 31 * result + getIcon().hashCode();
-		return result;
-	}
-
-	@Override
 	public boolean equals(Object o)
 	{
 		if (this == o)
@@ -86,6 +78,14 @@ public class Glyphicon
 		Glyphicon glyphicon = (Glyphicon) o;
 
 		return getIcon() == glyphicon.getIcon();
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getIcon().hashCode();
+		return result;
 	}
 
 	/**
