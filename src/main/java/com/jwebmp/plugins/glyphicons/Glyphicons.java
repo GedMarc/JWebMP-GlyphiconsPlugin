@@ -18,7 +18,7 @@ package com.jwebmp.plugins.glyphicons;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import static com.jwebmp.utilities.StaticStrings.STRING_SPACE;
+import static com.jwebmp.utilities.StaticStrings.*;
 
 /**
  * @author GedMarc
@@ -293,7 +293,10 @@ public enum Glyphicons
 	@Override
 	public String toString()
 	{
-		return "glyphicon glyphicon-" + name().toLowerCase().replaceAll("$", STRING_SPACE).replaceAll("_", "-");
+		return "glyphicon glyphicon-" +
+		       name().toLowerCase()
+		             .replaceAll("$", STRING_SPACE)
+		             .replaceAll("_", "-");
 	}
 
 }
