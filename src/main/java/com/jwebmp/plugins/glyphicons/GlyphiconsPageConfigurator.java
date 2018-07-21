@@ -16,11 +16,11 @@
  */
 package com.jwebmp.plugins.glyphicons;
 
-import com.jwebmp.Component;
-import com.jwebmp.Page;
-import com.jwebmp.PageConfigurator;
-import com.jwebmp.base.references.CSSReference;
-import com.jwebmp.plugins.PluginInformation;
+import com.jwebmp.core.Component;
+import com.jwebmp.core.Page;
+import com.jwebmp.core.PageConfigurator;
+import com.jwebmp.core.base.references.CSSReference;
+import com.jwebmp.core.plugins.PluginInformation;
 
 /**
  * @author GedMarc
