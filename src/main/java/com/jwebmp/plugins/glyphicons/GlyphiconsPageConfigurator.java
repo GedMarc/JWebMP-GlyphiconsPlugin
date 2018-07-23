@@ -16,11 +16,10 @@
  */
 package com.jwebmp.plugins.glyphicons;
 
-import com.jwebmp.core.Component;
 import com.jwebmp.core.Page;
-import com.jwebmp.core.PageConfigurator;
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.services.IPageConfigurator;
 
 /**
  * @author GedMarc
@@ -42,28 +41,11 @@ import com.jwebmp.core.plugins.PluginInformation;
 		pluginIconImageUrl = "bower_components/glyphicons-only-bootstrap/square_logo_400x400.png",
 		pluginLastUpdatedDate = "2017/03/04")
 public class GlyphiconsPageConfigurator
-		extends PageConfigurator
+		implements IPageConfigurator
 {
-
-	public static final String GlyphiconsEnabled = "glyphicons-enabled";
-	private static final long serialVersionUID = 1L;
-
 	public GlyphiconsPageConfigurator()
 	{
 		//Nothing Needed
-	}
-
-	/**
-	 * Sets the component as font awesome required to build
-	 *
-	 * @param component
-	 * @param required
-	 */
-	@SuppressWarnings("unchecked")
-	public static void setGlyphiconsRequired(Component component, boolean required)
-	{
-		component.getProperties()
-		         .put(GlyphiconsEnabled, required);
 	}
 
 	@Override

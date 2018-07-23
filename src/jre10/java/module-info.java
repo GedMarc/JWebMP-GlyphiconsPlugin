@@ -1,3 +1,6 @@
+import com.jwebmp.core.services.IPageConfigurator;
+import com.jwebmp.plugins.glyphicons.GlyphiconsPageConfigurator;
+
 module com.jwebmp.plugins.glyphicons {
 	exports com.jwebmp.plugins.glyphicons;
 
@@ -7,4 +10,7 @@ module com.jwebmp.plugins.glyphicons {
 
 	requires java.validation;
 	requires java.logging;
+
+	provides IPageConfigurator with GlyphiconsPageConfigurator;
+
 }

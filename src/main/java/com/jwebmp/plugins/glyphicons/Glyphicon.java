@@ -46,7 +46,6 @@ public class Glyphicon
 	public Glyphicon(Glyphicons icon)
 	{
 		this.icon = icon;
-		GlyphiconsPageConfigurator.setGlyphiconsRequired(this, true);
 	}
 
 	@Override
@@ -60,32 +59,15 @@ public class Glyphicon
 	}
 
 	@Override
-	public boolean equals(Object o)
+	public int hashCode()
 	{
-		if (this == o)
-		{
-			return true;
-		}
-		if (o == null || getClass() != o.getClass())
-		{
-			return false;
-		}
-		if (!super.equals(o))
-		{
-			return false;
-		}
-
-		Glyphicon glyphicon = (Glyphicon) o;
-
-		return getIcon() == glyphicon.getIcon();
+		return super.hashCode();
 	}
 
 	@Override
-	public int hashCode()
+	public boolean equals(Object o)
 	{
-		int result = super.hashCode();
-		result = 31 * result + getIcon().hashCode();
-		return result;
+		return super.equals(o);
 	}
 
 	/**
