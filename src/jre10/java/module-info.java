@@ -12,5 +12,5 @@ module com.jwebmp.plugins.glyphicons {
 	requires java.logging;
 
 	provides IPageConfigurator with GlyphiconsPageConfigurator;
-
+	opens com.jwebmp.plugins.glyphicons to com.fasterxml.jackson.databind,com.jwebmp.core;
 }
