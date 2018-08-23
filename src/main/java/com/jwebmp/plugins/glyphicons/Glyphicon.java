@@ -18,7 +18,7 @@ package com.jwebmp.plugins.glyphicons;
 
 import com.jwebmp.core.base.html.Span;
 import com.jwebmp.core.base.html.attributes.NoAttributes;
-import com.jwebmp.core.base.html.interfaces.GlobalChildren;
+import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
 import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
@@ -31,7 +31,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 		description = "GLYPHICONS is a library of precisely prepared monochromatic icons and symbols, created with an emphasis to simplicity and easy orientation.",
 		url = "http://glyphicons.com/")
 public class Glyphicon
-		extends Span<GlobalChildren, NoAttributes, Glyphicon>
+		extends Span<IComponentHierarchyBase, NoAttributes, Glyphicon>
 {
 
 	private static final long serialVersionUID = 1L;
