@@ -34,16 +34,16 @@ import javax.validation.constraints.NotNull;
 		pluginDependancyUniqueIDs = "",
 		pluginCategories = "fonts, icons",
 		pluginSubtitle = "Icons are not designed only for toolbars and navigation in Apple's OS X, iOS, and watchOS. They work perfectly almost everywhere. ",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-GlyphiconsPlugin",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP-GlyphiconsPlugin",
 		pluginSourceUrl = "",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-GlyphiconsPlugin/wiki",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-GlyphiconsPlugin/wiki",
 		pluginOriginalHomepage = "http://glyphicons.com/",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/GlyphiconsPlugin.jar/download",
 		pluginIconUrl = "bower_components/glyphicons-only-bootstrap/square_logo_400x400.png",
 		pluginIconImageUrl = "bower_components/glyphicons-only-bootstrap/square_logo_400x400.png",
 		pluginLastUpdatedDate = "2017/03/04")
 public class GlyphiconsPageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<GlyphiconsPageConfigurator>
 {
 	/**
 	 * If this configurator is enabled
