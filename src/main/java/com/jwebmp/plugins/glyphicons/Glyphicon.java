@@ -34,7 +34,6 @@ public class Glyphicon
 		extends Span<IComponentHierarchyBase, NoAttributes, Glyphicon>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	private Glyphicons icon;
 
