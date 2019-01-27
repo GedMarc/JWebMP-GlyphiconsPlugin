@@ -1,9 +1,3 @@
-import com.jwebmp.core.services.IPageConfigurator;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;
-import com.jwebmp.plugins.glyphicons.GlyphiconsPageConfigurator;
-import com.jwebmp.plugins.glyphicons.implementations.GlyphiconsExclusionsModule;
-
 module com.jwebmp.plugins.glyphicons {
 	exports com.jwebmp.plugins.glyphicons;
 
@@ -15,10 +9,10 @@ module com.jwebmp.plugins.glyphicons {
 	requires java.logging;
 	requires com.jwebmp.guicedinjection;
 
-	provides IPageConfigurator with GlyphiconsPageConfigurator;
+	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.glyphicons.GlyphiconsPageConfigurator;
 
-	provides IGuiceScanModuleExclusions with GlyphiconsExclusionsModule;
-	provides IGuiceScanJarExclusions with GlyphiconsExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.glyphicons.implementations.GlyphiconsExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.glyphicons.implementations.GlyphiconsExclusionsModule;
 
 	opens com.jwebmp.plugins.glyphicons to com.fasterxml.jackson.databind, com.jwebmp.core;
 }
