@@ -16,9 +16,11 @@
  */
 package com.jwebmp.plugins.glyphicons;
 
+import com.jwebmp.core.base.ComponentHierarchyBase;
 import com.jwebmp.core.base.html.Span;
 import com.jwebmp.core.base.html.attributes.NoAttributes;
 import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
+import com.jwebmp.core.base.interfaces.IIcon;
 import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
@@ -32,9 +34,8 @@ import com.jwebmp.core.plugins.ComponentInformation;
 		url = "http://glyphicons.com/")
 public class Glyphicon
 		extends Span<IComponentHierarchyBase, NoAttributes, Glyphicon>
+	implements IIcon<Glyphicon>
 {
-
-
 	private Glyphicons icon;
 
 	/**
@@ -87,5 +88,17 @@ public class Glyphicon
 	public void setIcon(Glyphicons icon)
 	{
 		this.icon = icon;
+	}
+
+	@Override
+	public String getClassName()
+	{
+		return icon.toString();
+	}
+
+	@Override
+	public ComponentHierarchyBase getIconComponent()
+	{
+		return this;
 	}
 }
