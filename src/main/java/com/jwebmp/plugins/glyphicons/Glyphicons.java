@@ -18,6 +18,7 @@ package com.jwebmp.plugins.glyphicons;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 
+import static com.guicedee.guicedinjection.json.StaticStrings.*;
 import static com.jwebmp.core.utilities.StaticStrings.*;
 
 /**
@@ -295,8 +296,8 @@ public enum Glyphicons
 	{
 		return "glyphicon glyphicon-" +
 		       name().toLowerCase()
-		             .replaceAll("$", STRING_SPACE)
-		             .replaceAll("_", "-");
+		             .replaceAll(STRING_DOLLAR, STRING_SPACE)
+		             .replace(CHAR_UNDERSCORE, CHAR_DASH);
 	}
 
 }
