@@ -34,7 +34,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 		url = "http://glyphicons.com/")
 public class Glyphicon
 		extends Span<IComponentHierarchyBase, NoAttributes, Glyphicon>
-	implements IIcon<Glyphicon>
+	implements IIcon<IComponentHierarchyBase,Glyphicon>
 {
 	private Glyphicons icon;
 
