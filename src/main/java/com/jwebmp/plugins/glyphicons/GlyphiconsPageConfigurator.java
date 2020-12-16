@@ -19,6 +19,7 @@ package com.jwebmp.plugins.glyphicons;
 import com.jwebmp.core.Page;
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.services.IPageConfigurator;
 
 import jakarta.validation.constraints.NotNull;
@@ -39,9 +40,14 @@ import jakarta.validation.constraints.NotNull;
 		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-GlyphiconsPlugin/wiki",
 		pluginOriginalHomepage = "http://glyphicons.com/",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/GlyphiconsPlugin.jar/download",
-		pluginIconUrl = "bower_components/glyphicons-only-bootstrap/square_logo_400x400.png",
-		pluginIconImageUrl = "bower_components/glyphicons-only-bootstrap/square_logo_400x400.png",
-		pluginLastUpdatedDate = "2017/03/04")
+		pluginIconUrl = "",
+		pluginIconImageUrl = "",
+		pluginLastUpdatedDate = "2017/03/04",
+		pluginGroupId = "com.jwebmp.plugins.iconsets",
+		pluginArtifactId = "jwebmp-font-awesome5",
+		pluginModuleName = "com.jwebmp.plugins.glyphicons",
+		pluginStatus = PluginStatus.Released
+)
 public class GlyphiconsPageConfigurator
 		implements IPageConfigurator<GlyphiconsPageConfigurator>
 {

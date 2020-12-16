@@ -16,7 +16,6 @@
  */
 package com.jwebmp.plugins.glyphicons;
 
-import com.jwebmp.core.base.ComponentHierarchyBase;
 import com.jwebmp.core.base.html.Span;
 import com.jwebmp.core.base.html.attributes.NoAttributes;
 import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
@@ -33,8 +32,8 @@ import com.jwebmp.core.plugins.ComponentInformation;
 		description = "GLYPHICONS is a library of precisely prepared monochromatic icons and symbols, created with an emphasis to simplicity and easy orientation.",
 		url = "http://glyphicons.com/")
 public class Glyphicon
-		extends Span<IComponentHierarchyBase, NoAttributes, Glyphicon>
-	implements IIcon<IComponentHierarchyBase,Glyphicon>
+		extends Span<IComponentHierarchyBase<?,?>, NoAttributes, Glyphicon>
+	implements IIcon<IComponentHierarchyBase<?,?>,Glyphicon>
 {
 	private Glyphicons icon;
 
@@ -97,7 +96,7 @@ public class Glyphicon
 	}
 
 	@Override
-	public ComponentHierarchyBase getIconComponent()
+	public IComponentHierarchyBase<?,?> getIconComponent()
 	{
 		return this;
 	}
