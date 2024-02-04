@@ -4,7 +4,7 @@ module com.jwebmp.plugins.glyphicons {
 	exports com.jwebmp.plugins.glyphicons;
 
 	requires com.jwebmp.core;
-	requires com.guicedee.logmaster;
+	
 
 	requires jakarta.validation;
 	requires java.logging;

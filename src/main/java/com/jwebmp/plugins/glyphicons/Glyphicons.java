@@ -18,7 +18,7 @@ package com.jwebmp.plugins.glyphicons;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import static com.guicedee.guicedinjection.json.StaticStrings.*;
+import static com.guicedee.services.jsonrepresentation.json.StaticStrings.*;
 import static com.jwebmp.core.utilities.StaticStrings.*;
 
 /**
